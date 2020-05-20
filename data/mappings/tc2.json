@@ -1,0 +1,416 @@
+{
+  "sections": [{"patients:registration:demographics": {"type": "list"}
+  			},
+  			{"patients:registration:demographics": {"type": "list"}
+  			},
+  			{"patients:summary:medicalEventsHistory:inpatient": {"type": "list"}
+  			},
+  			{"message":{"type":"object"}}
+  			],
+  "ADT": {"A01":["MSH", "EVN", "PID", "PV1", "NK1", "AL1", "DG1", "PR1", "ZPI", "ZPX"]
+  },			
+  	
+  "Common": { "MSH" : {"messageType": "./MSH-9-1", "messageTrigger": "./MSH-9-2", 
+  				"msgDateTime": "/MSH-7", "sendingFacility": "/MSH-4",
+  				"receivingFacility": "/MSH-6", "messageControlId" : "/MSH-10"
+  				}
+  			},
+  "AL1": {
+  },			
+  "PID": { "section":"patients:registration:demographics",  			
+		    "5.1": {"pep": "lastName", "uiid": "", "ui":"Last Name", "db": "", "csv": ""},
+			"5.2": {"pep": "firstName", "uiid": "", "uiid": "", "ui":"First Name", "db": "", "csv": ""},
+			"5.3": {"pep": "Middle Name", "uiid": "", "ui":"", "db": "", "csv": ""},
+			"4.1": {"pep": "fmp", "uiid": "", "ui":"FMP", "db": ""},
+			"4.2": {"pep": "sponsorSsn", "uiid": "", "ui":"Sponsor SSN", "db": "", "csv": ""},
+			"7": {"pep": "dob", "uiid": "", "ui":"DOB", "db": "", "csv": ""},
+			"8": {"pep": "gender", "uiid": "", "ui":"Gender", "db": "", "csv": ""},
+			"10": {"pep": "race", "uiid": "", "ui":"Race", "db": "", "csv": ""},
+			"19": {"pep": "ssn", "uiid": "", "ui":"SSN", "db": "", "csv": ""},
+			"27": {"pep": "branch", "uiid": "", "ui":"Branch", "db": "", "csv": ""},
+			"27.4": {"pep": "patientCategory", "uiid": "", "ui":"Patient Category", "db": "", "csv": ""}
+  },
+  "DG1": { "section": "patients:summary:medicalEventsHistory:inpatient",
+  			"1": {"pep": "setId", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"2": {"pep": "codingMethod", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"3": {"pep": "diagnosisCode", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"4": {"pep": "diagnosisText", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"5": {"pep": "diagnosisDateTime", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"6": {"pep": "diagnosisType", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"15": {"pep": "diagnosisPriority", "uiid": "", "ui":"", "db": "", "csv": ""}
+  },
+  "EVN": { "section": "message",
+  	"1": {"pep": "eventTypeCode", "uiid": "", "ui":"", "db": "", "csv": ""},
+  	"2": {"pep": "eventDateTime", "uiid": "", "ui":"", "db": "", "csv": ""},
+  	"3": {"pep": "planEventDateTime", "uiid": "", "ui":"", "db": "", "csv": ""},
+  	"4": {"pep": "eventReasonCode", "uiid": "", "ui":"", "db": "", "csv": ""}
+  },
+  "MRG": {
+
+  },
+  "MSH": {  "section" : "message",
+  			"1": {"pep": "fieldSeparator", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"2": {"pep": "orderCodeReason", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"3": {"pep": "sendingApplication", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"4": {"pep": "sendingFacility", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"5": {"pep": "receivingApplication", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"6": {"pep": "receivingFacility", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"7": {"pep": "dateTimeMessage", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"9-1": {"pep": "messageType", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"9-2": {"pep": "trigger", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"10": {"pep": "messageControlId", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"11": {"pep": "processingId", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"12": {"pep": "versionId", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"13": {"pep": "sequenceNumber", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"17": {"pep": "countryCode", "uiid": "", "ui":"", "db": "", "csv": ""}
+  },
+  "NK1": {
+  			"section" : "message",
+  			"1": {"pep": "setId", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"2": {"pep": "emergencyContactName", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"3": {"pep": "emergencyContactRelationship", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"4": {"pep": "emergencyContactAddress", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"5": {"pep": "emergencyContactPhone", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"7": {"pep": "emergencyContactRole", "uiid": "", "ui":"", "db": "", "csv": ""}
+
+  },
+  "NKU": {
+
+  },
+  "NPU": {
+
+  },
+  "NTE": {
+
+  },
+  "OBR": {"RAD:ORDER": 
+  			{ "section": "Patient Summary:Medical Events History:inpatitient:Radiology",
+  				"1": {"pep": "setId", "uiid": "", "ui":"", "db": "", "csv": ""},
+				"2": {"pep": "placerOrderNumber", "uiid": "", "ui":"", "db": "", "csv": ""},
+				"3": {"pep": "fillerOrderNumber", "uiid": "", "ui":"", "db": "", "csv": ""},
+ 				"4": {"pep": "radProcedure", "uiid": "", "ui":"", "db": "", "csv": ""}, 
+ 				"6": {"pep": "requestedDateTime", "uiid": "", "ui":"", "db": "", "csv": ""},
+ 				"7": {"pep": "fillerOrderNumber", "uiid": "", "ui":"", "db": "", "csv": ""}	
+
+  },
+
+  		  "RAD:RESULT":
+  			{ "section": "Patient Summary:Medical Events History:inpatitient:Radiology",
+				"1": {"pep": "setId", "uiid": "", "ui":"", "db": "", "csv": ""},
+				"2": {"pep": "placerOrderNumber", "uiid": "", "ui":"", "db": "", "csv": ""},
+				"3": {"pep": "fillerOrderNumber", "uiid": "", "ui":"", "db": "", "csv": ""},
+ 				"4": {"pep": "radProcedure", "uiid": "", "ui":"", "db": "", "csv": ""}, 	
+ 				"6": {"pep": "requestedDateTime", "uiid": "", "ui":"", "db": "", "csv": ""},
+ 				"7": {"pep": "fillerOrderNumber", "uiid": "", "ui":"", "db": "", "csv": ""}		
+
+
+  }
+},
+  "OBX": {
+  			"RAD": {
+  				"comment":"The radReport/comments section can also be the ammended comments",
+  				"1": {"pep": "setId", "uiid": "", "ui":"", "db": "", "csv": ""},
+  				"2": {"pep": "setId", "uiid": "", "ui":"", "db": "", "csv": ""},
+  				"3": {"pep": "setId", "uiid": "", "ui":"", "db": "", "csv": ""},
+  				"5": {"pep": "radReport", "uiid": "", "ui":"Comments", "db": "", "csv": "Comments"}
+  			}
+
+  },
+  "ODS": {
+
+  },
+  "ORC": {  "section": "",
+  			"1": {"pep": "orderContol", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"2": {"pep": "labOrderNumber", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"4": {"pep": "groupNumber", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"5": {"pep": "orderStatus", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"7": {"pep": "quantityTiming", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"9": {"pep": "dateTimeTransaction", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"10": {"pep": "enteredBy", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"11": {"pep": "verifiedBy", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"12": {"pep": "orderedBy", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"13": {"pep": "entersLocation", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"15": {"pep": "orderEffDateTime", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"16": {"pep": "orderCodeReason", "uiid": "", "ui":"", "db": "", "csv": ""}
+  },
+  "ORM": {
+  },
+  "ORU": { "section": "Patient Summary:Medical Events History:inpatitient:Radiology",
+  			"comment": "ORU/R01"
+
+  },
+  "PR1": {
+
+  },
+  "PV1": { "sections": "",
+  		   	"1": {"pep": "setID", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"2": {"pep": "patientClass", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"3": {"pep": "assignedLocation", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"4": {"pep": "admissionType", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"5": {"pep": "preAdmitNumber", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"6": {"pep": "priorLocation", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"7": {"pep": "attending", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"10": {"pep": "hospService", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"11": {"pep": "tempLocation", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"12": {"pep": "admitSource", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"17": {"pep": "admitDoctor", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"18": {"pep": "patientType", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"19": {"pep": "visitNumber", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"20": {"pep": "financialClass", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"36": {"pep": "dischDisposition", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"37": {"pep": "dischLocation", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"44": {"pep": "admitDateTime", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"45": {"pep": "dischDateTime", "uiid": "", "ui":"", "db": "", "csv": ""}
+  },
+  "PV2": {
+
+  },
+  "RXC": {
+
+  },
+  "RXE": {
+
+  },
+  "RXO": {
+
+  }, 
+  "RXR": {
+
+  },
+  "SCH": {
+
+  },
+  "STF": {
+
+  },
+  "ZD1": {
+		"section":"patients:registration:demographics",		  
+		  "2": {"pep": "unitEmployer", "uiid": "", "ui":"Unit Employer", "db": "", "csv": ""},
+		  "3": {"pep": "rank", "uiid": "", "ui":"Rank", "db": "", "csv": ""}
+  },
+  "ZIN": {
+
+  },
+  "ZL1": {
+
+  }, 
+  "ZMI": {
+
+  },
+  "ZM3": {
+
+  },
+  "ZM4": {
+
+  },
+  "ZM5": {
+
+  },
+  "ZM6": {
+
+  },
+  "ZM7": {
+
+  },
+  "ZM8": {
+
+  },
+  "ZM9": {
+
+  },
+  "ZMB": {
+
+  },
+  "ZMC": {
+
+  },
+  "ZMD": {
+
+  },
+  "ZME": {
+
+  },
+  "ZMF": {
+
+  },
+  "ZMG": {
+
+  },
+  "ZMH": {
+
+  },
+  "ZMI": {
+
+  },
+  "ZMJ": {
+
+  },
+  "ZML": {
+
+  },
+  "ZMM": {
+
+  },
+  "ZMP": {
+
+  },
+  "ZMQ": {
+
+  },
+  "ZMR": {
+
+  },
+   "ZMS": {
+
+  },
+   "ZMU": {
+
+  },
+  "ZMY": {
+
+  },
+  "ZMZ": {
+
+  },
+  "ZN1": {
+
+  },
+  "ZN2": {
+
+  },
+  "ZN4": {
+
+  },
+   "ZN5": {
+
+  },
+  "ZN7": {
+
+  },
+  "ZN9": {
+
+  },
+  "ZND": {
+
+  },
+  "ZNE": {
+
+  },
+  "ZNN": {
+
+  },
+  "ZNS": {
+
+  },
+  "ZNR": {
+
+  },
+  "ZNV": {
+
+  },
+   "ZNW": {
+
+  },
+  "ZNX": {
+
+  },
+  "ZNZ": {
+
+  },
+  "ZOB": {
+
+  },
+  "ZOE": {
+
+  },
+   "ZOG": {
+
+  },
+   "ZOO": {
+
+  },
+  "ZOR": {
+
+  },
+   "ZOT": {
+
+  },
+   "ZOW": {
+
+  },
+  "ZPE": {
+
+  },
+  "ZP1": {
+  			"1": {"pep": "patientOcc", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"2": {"pep": "outpatRecLoc", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"3-1": {"pep": "payGrade", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"3-2": {"pep": "rank", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"4-1": {"pep": "interestCatCode", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"4-2": {"pep": "interestCat", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"5": {"pep": "militaryStatus", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"6": {"pep": "primaryPhysician", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"7": {"pep": "admissionRemarks", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"8": {"pep": "casualtyStatus", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"9": {"pep": "casualtyDate", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"10": {"pep": "organDonorDate", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"11": {"pep": "organDonorFlag", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"12": {"pep": "flyingStatus", "uiid": "", "ui":"", "db": "", "csv": ""}
+  			
+
+  },
+  "ZPS": {
+
+  },
+   "ZPX": {
+   			"1": {"pep": "patientHCDP", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"2": {"pep": "contractorCode", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"3-1": {"pep": "dmisID", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"3-2": {"pep": "primaryCareMgrID", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"4-1": {"pep": "locationID", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"4-2": {"pep": "locationCode", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"5": {"pep": "attProvider", "uiid": "", "ui":"", "db": "", "csv": ""},
+  			"6": {"pep": "attProviderTaxID", "uiid": "", "ui":"", "db": "", "csv": ""}
+  			
+
+  },
+   "ZRA": {
+
+  },
+   "ZRC": {
+
+  },
+  "ZRD": {
+
+  },
+  "ZMQ": {
+
+  },
+  "ZRE": { "radEncounter": {
+  								"1": {"pep": "radExamStatus", "uiid": "", "ui":"Exam Status", "db": "", "csv": "Exam Status"},
+  								"2": {"pep": "radImagingType", "uiid": "", "ui":"Imaging Type", "db": "", "csv": "Imaging Type"}
+  }
+
+  },
+  "ZRL": {
+
+  },
+   "ZRR": {
+
+  },
+  "ZRS": {
+
+  },
+  "DEFAULTS": { 
+  				"sections":[{"section": ["patients:registration:demographics"], 
+			  				"values":[
+								{"pep": "nation", "uiid": "", "ui": "Nation", "db": "", "value":"USA", "csv": ""},
+								{"pep": "vipType", "uiid": "", "ui": "VIP Type", "db": "", "value":"", "csv": ""},
+								{"pep": "visitType", "uiid": "", "ui": "Visit Type", "db": "", "value":"Initial Visit", "csv": ""},
+								{"pep": "traumaRegisterNumber", "uiid": "", "ui": "Trauma/Register #", "db": "", "value":"", "csv": ""},
+								{"pep": "sensitiveRecord", "uiid": "", "ui": "Sensitive Record", "db": "", "value":"", "csv": ""}
+						 	]
+  							}
+  				]
+  	}
+}

@@ -1,0 +1,25 @@
+{
+	"mapping_files": "/Users/rob/eclipse-workspace/com-asc-qa/data/mappings",
+	
+	"tc2": {
+		"path": "/Users/rob/Downloads/ALICE_HAMMERVIK",
+		"file_mask":".*/TC2_.*\\.HDP",
+		"mappings": "tc2.json",
+		"mapping_file_name":""
+	},
+	"ahltat": {
+		"path": "/Users/rob/Downloads/ALICE_HAMMERVIK",
+		"file_mask":".XML",
+		"mapping_file_name":""
+	}, 
+	"mcc": {
+		"path": "/Users/rob/Downloads/ALICE_HAMMERVIK",
+		"file_mask":".HL7",
+		"mapping_file_name":""
+	},
+	"sams8": {
+		"path": "",
+		"mapping_file_name":""
+	}
+
+}

@@ -1,0 +1,95 @@
+The purpose of this meeting is to explore the appropriate level of validation we want 
+to do for external data files based on data sources and message type. Initial cut may be 
+to identify number of encounters by patient type (I or O) and count of message types.
+
+
+
+
+For example: AHLTA-T are outpatient encounters
+TC2 are inpatient encounters and also include message types LABS/RADS/MEDS/NRS
+
+A01 ADMIT A PATIENT Report Structure
+
+A02 Transfer a Patient Report Structure
+
+A03 Discharge a Patient Report Structure
+
+A08 Update Patient Information Report Structure
+
+A08 DISCHARGE SUMMARY Report Structure
+
+A11 Cancel Admit Report Structure
+
+A12 Cancel Transfer Report Structure
+
+A13 Cancel Discharge Report Structure
+
+A17 Swap Patients Report Structure
+
+A20 Bed Status Update Report Structure
+
+Z20 TMIP Custom Bed Status Update Report Structure
+
+A21 Patient Goes on a “Leave of Absence” Report Structure
+
+A22 Patient Returns from a “Leave of Absence” Report Structure
+
+A24 Link Patient Information Report Structure
+
+A28 Add Person Information Report Structure
+
+ZZ8 CIS Update Person Message to Include Admission Information Report Structure
+
+A30 Merge Person Information Report Structure
+
+ADT/A31 – HL DG Update Person Message Report Structure
+
+A37 Unlink Patient Information Report Structure
+
+ORM/001 Diet (DTS) Orders Entered and Activated Report Structure
+
+ORM/001 IV Drips (IVD) Orders Entered and Activated Report Structure
+
+ORM/001 IV Fluids (IVF) Orders Entered and Activated Report Structure
+
+ORM/001 IV Hyperalimentation (IVH) Orders Entered and Activated Report Structure
+
+ORM/001 IV Push/Piggyback (IVP) Orders Entered and Activated Report Structure
+
+ORM/001 Inpatient Medications (MED) Orders Entered and Activated Report Structure
+
+ORM/001 Outpatient Prescriptions (RX) Orders Entered and Activated Report Structure
+
+ORM/001 Nursing (NRS/NIO) Orders Entered and Activated Report Structure
+
+ORM/001 Laboratory (LAB) Orders Entered and Activated Report Structure
+
+ORM/001 Radiology (RAD) Orders Entered and Activated Report Structure
+
+ORM/001 Radiology Task Updated as Result is Entered Report Structure
+
+ORU/R01 Laboratory Anatomic Pathology Results Report Structure
+
+ORU/R01 Laboratory Blood Bank Results Report Structure
+
+ORU/R01 Laboratory Chemistry Results Report Structure
+
+ORU/R01 Laboratory Microbiology Results Report Structure
+
+ORU/R01 Nursing Results Report Structure
+
+ORU/R01 Radiology Procedure is Scheduled Report Structure
+
+ORU/R01 Patient has Arrived for Radiology Examination Report Structure
+
+ORU/R01 Radiology Procedure Status is Updated Report Structure
+
+ORU/R01 Radiology Result Report Structure
+
+ORU/R01 Radiology Special Interest Code or teaching code is updated after the exam is completed Report Structure
+
+ORU/O01 Progress Note is Entered Report Structure
+
+ORU/R01 Consult Results is Verified Report Structure
+
+RDS/R01 HL PSO Pharmacy Dispense Message
